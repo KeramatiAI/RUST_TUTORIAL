@@ -2,6 +2,7 @@ mod data_types;
 use data_types::DataFields;
 
 fn main() {
+    // Method 1
     let data_fields = DataFields {
         first_name: "davoud".to_string(),
         last_name: "keramati".to_string(),
@@ -18,6 +19,8 @@ fn main() {
     // برای چاپ struct از :? استفاده کنید چون Debug را اضافه کردیم
     println!("data_fields: {:?}", data_fields);
 
+
+    // Method 2
 
     let name = data_fields.first_name; // استفاده از clone برای String
     let family = data_fields.last_name;
